@@ -1,0 +1,381 @@
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>CalCulaTor - Advanced Calculator</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="author" content="Ronaldo da Costa Bispo">
+    <link rel="icon" type="image/ico" href="/images/favicon.ico">
+    <link href="/stylesheets/styles.css" rel="stylesheet" type="text/css">
+  </head>
+  <body class="light-bg home loaded">
+    <div id="overlay"></div>
+    <div class="main-container">
+      <div class="home-banner dark">
+        <div class="main-content-inner content-width" style="padding-bottom:0px;">
+          <div class="header_container">
+            <div class="title_container">
+              <h2 class="title">CalCulaTor</h2>
+              <p class="subtitle">Beta</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="home-cta-bar-container accent">
+        <div class="content-width">
+          <div class="home-cta-bar">
+            <div class="text">
+              The all-in-one solution for your calculation and mathematic needs
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="main-content">
+        <div class="main-content-inner content-width">
+          <div class="column-container">
+            <div class="column-one-third">
+              <div class="icons-column">
+                <div class="icon-backing" style="background-color: #404043;"><i class="fa fa-file"></i></div>
+              </div>
+              <div class="content-column">
+                <h3>Skins</h3>
+                <p>NightOwl includes 3 Skins - <em>Realistic, Flat</em> and <em>Dark</em>. You can change Skins with a single setting, or
+                  modify the well-commented CSS to easily create your own Calculator Skins.
+                </p>
+              </div>
+            </div>
+            <div class="column-one-third">
+              <div class="icons-column">
+                <div class="icon-backing" style="background-color: #404043;"><i class="fa fa-area-chart"></i></div>
+              </div>
+              <div class="content-column">
+                <h3>Memory Functions</h3>
+                <p>In Scientific Mode, NightOwl Calculators include Memory Functions.
+                  Clicking <strong>MS</strong> after solving a problem stores the answer to memory.
+                  To retrieve that answer later, click <strong>MR</strong>.
+                </p>
+              </div>
+            </div>
+            <div class="column-one-third">
+              <div class="icons-column">
+                <div class="icon-backing" style="background-color: #404043;"><i class="fa fa-arrows"></i></div>
+              </div>
+              <div class="content-column">
+                <h3>Draggable</h3>
+                <p>For more involved sites and projects, NightOwl Calculators can be configured to be
+                  Draggable if needed. Each Calculator can also optionally be set to <em>Fixed Scrolling Mode</em> to keep up with
+                  your visitors.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="divider"></div>
+          <div class="clear"></div>
+          <br><br>
+          <div class="column-container mid_container">
+            <div class="column-one-qtr" style="float:left;">
+              <div id="portfolio-blog-slider-container">
+                <div class="night_owl" data-nightowl="{&quot;drag&quot;:false, &quot;subline&quot;:&quot;Scientific Calculator Demo&quot; }" style="display: block; position: relative; z-index: 999999;">
+                  <div name="night_owl_calc" class="night_owl_calc no_skin1">
+                    <div class="no_solar">
+                      <div class="no_title">NightOwl<br><span class="no_sub">Basic Calculator Demo</span></div>
+                      <div class="no_solpanels"><span></span><span></span><span></span><span></span></div>
+                    </div>
+                    <input type="hidden" name="no_oldresult" value="" class="no_oldresult">
+                    <input type="hidden" name="no_calc_mem" value="" class="no_calc_mem">
+                    <input type="text" size="16" name="resultant" readonly="true" class="no_results" id="resultant">
+                    <select size="1" hidden="" class="no_dec_select">
+                      <option value="-1" selected="">decimal</option>
+                    </select>
+                    <input type="text" size="17" name="no_calc_field" class="no_calc_field" id="no_calc_field">
+                    <div class="night_owl_rbs">
+                      <div class="no_rb">
+                        <input type="radio" name="vwxyz" title="Radians" checked="" class="key_radians">
+                        <label for="Radians" class="link_rad">RAD</label>
+                        <input type="radio" name="vwxyz" title="Degree" class="key_degree" value="degrees">
+                        <label for="Degree" class="link_deg">DEG</label>
+                        <input type="radio" name="vwxyz" title="Gradient" class="key_gradient" value="grads">
+                        <label for="Gradient" class="link_grad">GRAD</label>
+                      </div>
+                    </div>
+                    <div class="no_main_keys">
+                      <input type="button" title="Switch to Basic Mode" name="toggle" readonly="true" class="no_key_toggle no_calc_key" value="▼">
+                      <input type="button" title="Backspace" name="Backspace" value="←" readonly="true" class="key_backspace no_calc_key key_wide" style="width: 139px!important;">
+                      <input type="button" name="Cls" value="Cls" title="Clear Screen" class="key_cls no_calc_key key_wide" readonly="true" style="width: 135px!important">
+                      <div name='left_' style="width:215px;">
+                        <input type="button" name="lijevo" title="Open Parenthesis" value="(" class="key_parl no_calc_key" readonly="true">
+                        <input type="button" name="desno" title="Close Parenthesis" value=")" class="key_parr no_calc_key" readonly="true">
+                        <input type="button" name="sqrt" value="√" title="Square Root" class="key_squareroot no_calc_key" readonly="true">
+                        <input type="button" name="7" value="7" class="key_7 key_basic" readonly="true">
+                        <input type="button" name="8" value="8" class="key_8 key_basic" readonly="true">
+                        <input type="button" name="9" value="9" class="key_9 key_basic" readonly="true">
+                        <input type="button" name="4" value="4" class="key_4 key_basic" readonly="true">
+                        <input type="button" name="5" value="5" class="key_5 key_basic" readonly="true">
+                        <input type="button" name="6" value="6" class="key_6 key_basic" readonly="true">
+                        <input type="button" name="1" value="1" class="key_1 key_basic" readonly="true">
+                        <input type="button" name="2" value="2" class="key_2 key_basic" readonly="true">
+                        <input type="button" name="3" value="3" class="key_3 key_basic" readonly="true">
+                      </div>
+                      <div name="right_" style="height: 216px; float: right; position: absolute; top: 246px; right: 5px; width: 142.57px;">
+                        <input type="button" name="square" title="Square" value="x²" class="key_parr no_calc_key" readonly="true">
+                        <input type="button" name="postotak" value="%" title="Percent" class="key_percent no_calc_key" readonly="true">
+                        <input type="button" name="djeljeno" title="Divide" value="÷" class="key_divide key_basic" readonly="true">
+                        <input type="button" name="puta" title="Multiply" value="x" class="key_multiply key_basic" readonly="true">
+                        <input type="button" name="minus" title="Subtract" value="-" class="key_minus key_basic" readonly="true">
+                        <input type="button" name="sign" value="±" title="Change Sign" class="key_changesign key_basic" readonly="true">
+                        <input type="button" name="plus" title="Add" value="+" class="key_add key_basic key_wide" readonly="true" style="width: 138px!important;">
+                      </div>
+                      <div name="low_" style="width: 362.57px;">
+                        <input type="button" name="." title="Decimal" value="." class="key_decimal key_basic" readonly="true">
+                        <input type="button" name="0" value="0" class="key_0 key_basic" readonly="true">
+                        <input type="button" name="enter" title="Equals" class="key_enter key_basic key_wide" value="=" readonly="true" style="width: 212px!important;">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="column-one-half portfolio-details right_info">
+              <a href="http://crusader12.com/C12NightOwl/#" class="button accent" onclick="javascript:return false;" style="cursor:default;"><i class="fa fa-sort-alpha-desc"></i>Advanced Calculations</a><br><br>
+              <p>In Scientific Mode NightOwl Calculators offer a fully functional Scientific Calculator
+                with features such as Square Root, Logarithm Functions, Exponents, Memory Store &amp; Recall, Factorials and Pi.
+                Trigonometry Functions have Selectable Radians, Degrees or Gradients.
+                <br><br>
+                Users can toggle to Basic Calculator Mode, however NightOwl provides customization settings to start in either Basic
+                or Scientific Mode. Additionally, you can disable the ability to toggle Modes altogether.
+                <br><br>
+              </p>
+              <p>
+              </p>
+              <p><strong>An infinite of NightOwl Caculators can be added to your page and individually customized.</strong></p>
+            </div>
+          </div>
+          <div class="clear"></div>
+          <br><br><br>
+          <div class="column-container more_info">
+            <div class="column-one-third">
+              <div class="icons-column">
+                <div class="icon-backing" style="background-color: #404043;"><i class="fa fa-hand-o-up"></i></div>
+              </div>
+              <div class="content-column">
+                <h3>Top Design</h3>
+                <p>If you aren't into the solar cell look, you can choose to hide the Calculator top. NightOwl also provides settings for defining your
+                  own custom Title and Subtitle - unique to each Calculator.
+                </p>
+              </div>
+            </div>
+            <div class="column-one-third">
+              <div class="icons-column">
+                <div class="icon-backing" style="background-color: #404043;"><i class="fa fa-star-half-empty"></i></div>
+              </div>
+              <div class="content-column">
+                <h3>Results Animations</h3>
+                <p>Custom Animations are built into the Calculator, allowing you to configure NightOwl to Flip, Rotate, Spin or perform your
+                  own custom CSS Animations whenever your user gets their results.
+                </p>
+              </div>
+            </div>
+            <div class="column-one-third">
+              <div class="icons-column">
+                <div class="icon-backing" style="background-color: #404043;"><i class="fa fa-code"></i></div>
+              </div>
+              <div class="content-column">
+                <h3>Results Callbacks</h3>
+                <p>Pass in your own JavaScript functions to perform whenever the user gets the results of their calculations.
+                  This is useful for retrieving the results and using them elsewhere on your page.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="background-section ascii_bg">
+          <div class="main-content-inner content-width" style="padding-bottom:0px;">
+            <h2>Equation Parsing</h2>
+            <br>
+            <p>NightOwl also provides Calculators designed for specific situations. These <em>Mini-Calculators</em> are built
+              with a single setting - an equation. NightOwl parses the equation and automatically builds the Calculator for you -
+              handling all the Math behind the scenes. Mini-Calculators are optionally draggable, support NightOwl's positioning options and
+              include flexible unit handling.
+            </p>
+            <br>
+          </div>
+        </div>
+        <div class="main-content-inner content-width">
+          <h1 style="text-align:center;">The Mini-Calculators below are automatically generated by writing an equation.</h1>
+          <div class="column-container">
+            <div class="column-one-third">
+              <div class="icons-column">
+                <div class="icon-backing" style="background-color: #404043;"><i class="fa fa-calculator"></i></div>
+              </div>
+              <div class="content-column">
+                <h3>Mini-Calculators</h3>
+                <p>Mini-Calculators are formula-based calculators baked right in to NightOwl. They are designed to
+                  handle specific situations, like calculating profit on investments or converting units.
+                </p>
+              </div>
+            </div>
+            <div class="column-one-third">
+              <div class="icons-column">
+                <div class="icon-backing" style="background-color: #404043;"><i class="fa fa-toggle-on"></i></div>
+              </div>
+              <div class="content-column">
+                <h3>Expandable Presets</h3>
+                <p>Common Mini-Calculators can selected by supplying the name of the Mini-Calculator to the
+                  <strong>equation</strong> setting. You can also create your own Mini-Calculator presets for later use.
+                </p>
+              </div>
+            </div>
+            <div class="column-one-third">
+              <div class="icons-column">
+                <div class="icon-backing" style="background-color: #404043;"><i class="fa fa-dot-circle-o"></i></div>
+              </div>
+              <div class="content-column">
+                <h3>Positioning</h3>
+                <p>All Calculators can be quickly set to Fixed Position mode, to stay within the Viewport as the viewer scrolls through
+                  your page. When assigned to a field, 12 preset positions are available.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <br>
+        <div class="background-section ascii_bg">
+          <div class="main-content-inner content-width" style="padding-bottom:0px;">
+            <h2>Field Assignment</h2>
+            <br>
+            <p>NightOwl Calculators can be directly assigned to specific Input Fields - perfect for everyday form fields that
+              may require a little math. Calculators can be opened in 12 preset positions and the Assigned Fields are
+              automatically updated with current Calculator results. Optionally positioning modes are available, this one uses Fixed
+              and is Draggable.
+            </p>
+            <br>
+          </div>
+        </div>
+        <div class="main-content-inner content-width" style="padding-bottom:0px;">
+          <div class="column-one-half">
+            <h1>Support</h1>
+            <p class="support">The NightOwl Calculator Kit has been tested in multiple environments using jQuery 1.7.1+.
+              Comprehensive and Interactive Documentation is included.
+              Support questions and feature requests will be answered as soon as possible.
+              No knowledge of Javascript, jQuery, or Math is necessary to use this plugin.
+              Please rate this plugin and provide feedback for features in the next version.
+              Owl photos courtesy of: <a href="http://photodune.net/user/Lifeonwhite?ref=Crusader12" target="_blank">LifeOnWhite</a>.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="footer"></div>
+    </div>
+  </body>
+  <script src="/javascripts/jquery.min.js"></script>
+  <script type="text/javascript">
+    function changeTextResponse(button) {
+      var value = $('#no_calc_field').val();
+      $('#no_calc_field').val(value + $(button).val());
+    }
+
+    function backspaceTextResponse() {
+      var value = $('#no_calc_field').val();
+      $('#no_calc_field').val(value.substring(0, value.length - 1));
+    }
+
+    function setTextResponse(str) {
+      $('#no_calc_field').val(str);
+    }
+
+    function getTextResponse() {
+      return $('#no_calc_field').val();
+    }
+
+    function setTextResultant(str) {
+      $('#resultant').val(str);
+    }
+
+    function withCallback(callback) {
+      callback(arguments[1]);
+    }
+
+    function getTextResultant() {
+      return $('#resultant').val();
+    }
+
+    function calculateTextResponse(callback) {
+      var text = getTextResponse();
+          text = text.replace(/\s/g, '');
+          text = text.replace(/\++/g, '+');
+          text = text.replace(/\-+/g, '-');
+          text = text.replace(/\x+/g, '*');
+          text = text.replace(/÷+/g, '/');
+
+      $.post('/calculate', { factor: text }, function(data, status) {
+        setTextResultant(text);
+        setTextResponse(data);
+      }).done(function() {
+        if(callback) {
+          callback();
+        }
+      });
+    }
+
+    function invertSignal() {
+      var text = getTextResponse();
+      console.log(text);
+
+      if (text.match(/^\-/)) {
+        setTextResultant(text);
+        setTextResponse(text.replace(/^\-/, ''));
+      }else
+      if (text.match(/^\+|\d/)) {
+        withCallback(setTextResultant, text);
+        withCallback(setTextResponse, '-' + text);
+      }
+    }
+
+    function setResultantWithPercentage() {
+      var text = getTextResultant();
+      setTextResultant(text + '%');
+      withCallback(calcPercentage);
+    }
+
+    function calcPercentage() {
+      var text = getTextResultant();
+      $.post('/calculate', { factor: text }, function(data, status) {
+        setTextResponse(data);
+      });
+    }
+
+    function calcSquared() {
+      var text = getTextResponse();
+      setTextResponse(text + 'x' + text);
+      calculateTextResponse();
+    }
+
+    $('input:button').click(function() {
+      var value = $(this).val();
+      console.log(value);
+      if (value == 'Cls') {
+        setTextResponse('');
+        setTextResultant('');
+      } else
+      if (value == '←') {
+        backspaceTextResponse();
+      } else
+      if (value == '±') {
+        calculateTextResponse(invertSignal);
+      } else
+      if (value == '%') {
+        calculateTextResponse(setResultantWithPercentage);
+      } else
+      if (value == '=') {
+        calculateTextResponse();
+      } else
+      if (value == 'x²') {
+        calcSquared();
+      } else
+      {
+        changeTextResponse($(this));
+      }
+
+    });
+  </script>
+</html>
